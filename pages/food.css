@@ -85,8 +85,8 @@
 
 @media (min-width: 992px) {
     .food-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
     
     .food-hero {
@@ -96,7 +96,7 @@
 
 @media (min-width: 1200px) {
     .food-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
     }
 }
