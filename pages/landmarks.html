@@ -13,39 +13,16 @@
 <body>
     <header class="header" data-header>
         <div class="container">
-            <a href="../index.html">
+            <div class="overlay" data-overlay></div>
+            
+            <a href="../index.html" class="logo">
                 <img src="../assets/images/fsc-logo-black.png" alt="logo" width="100" height="100">
             </a>
-            <nav class="navbar" data-navbar>
-                <div class="navbar-top">
-                    <a href="../index.html" class="logo">Desinic</a>
-                    <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-                </div>
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <a href="../index.html#home" class="navbar-link" data-navbar-link>Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="../index.html#about" class="navbar-link" data-navbar-link>Tanauan</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="../index.html#services" class="navbar-link" data-navbar-link>Explore</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="../index.html#blog" class="navbar-link" data-navbar-link>Visit Map</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-                <ion-icon name="menu-outline"></ion-icon>
-            </button>
         </div>
     </header>
 
     <main>
-        <section class="hero landmarks-hero">
+        <!-- <section class="hero landmarks-hero">
             <div class="container">
                 <div class="hero-content">
                     <h1 class="h2 hero-title">Tanauan's Cultural Landmarks</h1>
@@ -56,112 +33,156 @@
                     <a href="../index.html" class="btn">Back to Home</a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="section landmarks-section">
             <div class="container">
                 <h2 class="h2 section-title underline">Historic Sites & Monuments</h2>
                 
-                <div class="landmarks-grid">
-                    <div class="landmark-card">
-                        <div class="landmark-image">
-                            <img src="../assets/images/blog-1.jpg" alt="San Lorenzo Ruiz Parish Church" class="w-100">
-                        </div>
-                        <div class="landmark-content">
-                            <h3 class="h3 landmark-title">San Lorenzo Ruiz Parish Church</h3>
-                            <p class="landmark-description">
-                                A historic church that stands as a testament to Tanauan's deep religious heritage. 
-                                Built with traditional Filipino-Spanish architecture, it serves as both a place of worship 
-                                and a cultural landmark that has witnessed the city's growth and development over the centuries.
-                            </p>
-                            <div class="landmark-details">
-                                <span class="detail-item">
-                                    <ion-icon name="calendar-outline"></ion-icon>
-                                    Established: 18th Century
-                                </span>
-                                <span class="detail-item">
-                                    <ion-icon name="location-outline"></ion-icon>
-                                    City Center
-                                </span>
+                <div class="landmarks-slider-container">
+                    <button class="slider-nav-btn prev-btn" aria-label="Previous landmarks">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </button>
+                    
+                    <div class="landmarks-slider">
+                        <div class="landmarks-grid">
+                            <div class="landmark-card" data-landmark="san-lorenzo">
+                                <div class="landmark-image">
+                                    <img src="../assets/images/blog-1.jpg" alt="San Lorenzo Ruiz Parish Church" class="w-100">
+                                </div>
+                                <div class="landmark-content">
+                                    <h3 class="h3 landmark-title">San Lorenzo Ruiz Parish Church</h3>
+                                    <p class="landmark-description">
+                                        A historic church that stands as a testament to Tanauan's deep religious heritage. 
+                                        Built with traditional Filipino-Spanish architecture, it serves as both a place of worship 
+                                        and a cultural landmark that has witnessed the city's growth and development over the centuries.
+                                    </p>
+                                    <div class="landmark-details">
+                                        <span class="detail-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            Established: 18th Century
+                                        </span>
+                                        <span class="detail-item">
+                                            <ion-icon name="location-outline"></ion-icon>
+                                            City Center
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="landmark-card">
-                        <div class="landmark-image">
-                            <img src="../assets/images/blog-2.jpg" alt="Apolinario Mabini Monument" class="w-100">
-                        </div>
-                        <div class="landmark-content">
-                            <h3 class="h3 landmark-title">Apolinario Mabini Monument</h3>
-                            <p class="landmark-description">
-                                Dedicated to the "Sublime Paralytic" and "Brains of the Revolution," this monument honors 
-                                Apolinario Mabini, one of the Philippines' greatest heroes. The landmark celebrates his 
-                                contributions to Philippine independence and his intellectual legacy.
-                            </p>
-                            <div class="landmark-details">
-                                <span class="detail-item">
-                                    <ion-icon name="calendar-outline"></ion-icon>
-                                    Erected: 20th Century
-                                </span>
-                                <span class="detail-item">
-                                    <ion-icon name="location-outline"></ion-icon>
-                                    Public Plaza
-                                </span>
+                            <div class="landmark-card" data-landmark="mabini-monument">
+                                <div class="landmark-image">
+                                    <img src="../assets/images/blog-2.jpg" alt="Apolinario Mabini Monument" class="w-100">
+                                </div>
+                                <div class="landmark-content">
+                                    <h3 class="h3 landmark-title">Apolinario Mabini Monument</h3>
+                                    <p class="landmark-description">
+                                        Dedicated to the "Sublime Paralytic" and "Brains of the Revolution," this monument honors 
+                                        Apolinario Mabini, one of the Philippines' greatest heroes. The landmark celebrates his 
+                                        contributions to Philippine independence and his intellectual legacy.
+                                    </p>
+                                    <div class="landmark-details">
+                                        <span class="detail-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            Erected: 20th Century
+                                        </span>
+                                        <span class="detail-item">
+                                            <ion-icon name="location-outline"></ion-icon>
+                                            Public Plaza
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="landmark-card">
-                        <div class="landmark-image">
-                            <img src="../assets/images/blog-3.jpg" alt="Tanauan City Hall" class="w-100">
-                        </div>
-                        <div class="landmark-content">
-                            <h3 class="h3 landmark-title">Tanauan City Hall</h3>
-                            <p class="landmark-description">
-                                The seat of local government, Tanauan City Hall represents the city's administrative heritage 
-                                and modern governance. The building's architecture reflects the blend of traditional Filipino 
-                                design with contemporary functionality.
-                            </p>
-                            <div class="landmark-details">
-                                <span class="detail-item">
-                                    <ion-icon name="calendar-outline"></ion-icon>
-                                    Built: 20th Century
-                                </span>
-                                <span class="detail-item">
-                                    <ion-icon name="location-outline"></ion-icon>
-                                    Government District
-                                </span>
+                            <div class="landmark-card" data-landmark="city-hall">
+                                <div class="landmark-image">
+                                    <img src="../assets/images/blog-3.jpg" alt="Tanauan City Hall" class="w-100">
+                                </div>
+                                <div class="landmark-content">
+                                    <h3 class="h3 landmark-title">Tanauan City Hall</h3>
+                                    <p class="landmark-description">
+                                        The seat of local government, Tanauan City Hall represents the city's administrative heritage 
+                                        and modern governance. The building's architecture reflects the blend of traditional Filipino 
+                                        design with contemporary functionality.
+                                    </p>
+                                    <div class="landmark-details">
+                                        <span class="detail-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            Built: 20th Century
+                                        </span>
+                                        <span class="detail-item">
+                                            <ion-icon name="location-outline"></ion-icon>
+                                            Government District
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="landmark-card">
-                        <div class="landmark-image">
-                            <img src="../assets/images/blog-4.jpg" alt="Heritage Houses" class="w-100">
-                        </div>
-                        <div class="landmark-content">
-                            <h3 class="h3 landmark-title">Heritage Houses</h3>
-                            <p class="landmark-description">
-                                Scattered throughout Tanauan are beautiful heritage houses that showcase traditional Filipino 
-                                architecture. These well-preserved structures tell the story of the city's affluent past and 
-                                the families who contributed to its cultural and economic development.
-                            </p>
-                            <div class="landmark-details">
-                                <span class="detail-item">
-                                    <ion-icon name="calendar-outline"></ion-icon>
-                                    Era: Spanish Colonial
-                                </span>
-                                <span class="detail-item">
-                                    <ion-icon name="location-outline"></ion-icon>
-                                    Various Locations
-                                </span>
+                            <div class="landmark-card" data-landmark="heritage-houses">
+                                <div class="landmark-image">
+                                    <img src="../assets/images/blog-4.jpg" alt="Heritage Houses" class="w-100">
+                                </div>
+                                <div class="landmark-content">
+                                    <h3 class="h3 landmark-title">Heritage Houses</h3>
+                                    <p class="landmark-description">
+                                        Scattered throughout Tanauan are beautiful heritage houses that showcase traditional Filipino 
+                                        architecture. These well-preserved structures tell the story of the city's affluent past and 
+                                        the families who contributed to its cultural and economic development.
+                                    </p>
+                                    <div class="landmark-details">
+                                        <span class="detail-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            Era: Spanish Colonial
+                                        </span>
+                                        <span class="detail-item">
+                                            <ion-icon name="location-outline"></ion-icon>
+                                            Various Locations
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <button class="slider-nav-btn next-btn" aria-label="Next landmarks">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </button>
+                </div>
+                
+                <div class="slider-dots">
+                    <button class="dot active" data-slide="0" aria-label="Go to slide 1"></button>
+                    <button class="dot" data-slide="1" aria-label="Go to slide 2"></button>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Modal -->
+    <div class="modal" id="landmarkModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="modal-details">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div class="modal-info">
+                    <div class="info-item">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <span id="modalEra"></span>
+                    </div>
+                    <div class="info-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span id="modalLocation"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-bottom">
@@ -178,5 +199,88 @@
     <script src="../assets/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        // Landmarks data
+        const landmarks = {
+            'san-lorenzo': {
+                title: 'San Lorenzo Ruiz Parish Church',
+                image: '../assets/images/blog-1.jpg',
+                description: 'A historic church that stands as a testament to Tanauan\'s deep religious heritage. Built with traditional Filipino-Spanish architecture, it serves as both a place of worship and a cultural landmark that has witnessed the city\'s growth and development over the centuries. The church features intricate architectural details, stained glass windows, and serves as a center for community gatherings and religious celebrations. Visitors can admire the beautiful facade and experience the spiritual atmosphere that has been preserved for generations.',
+                era: 'Established: 18th Century',
+                location: 'City Center'
+            },
+            'mabini-monument': {
+                title: 'Apolinario Mabini Monument',
+                image: '../assets/images/blog-2.jpg',
+                description: 'Dedicated to the "Sublime Paralytic" and "Brains of the Revolution," this monument honors Apolinario Mabini, one of the Philippines\' greatest heroes. The landmark celebrates his contributions to Philippine independence and his intellectual legacy. The monument stands as a symbol of the Filipino people\'s struggle for freedom and the intellectual contributions that shaped the nation\'s history. Visitors can learn about Mabini\'s life, his role in the revolution, and his lasting impact on Philippine governance and philosophy.',
+                era: 'Erected: 20th Century',
+                location: 'Public Plaza'
+            },
+            'city-hall': {
+                title: 'Tanauan City Hall',
+                image: '../assets/images/blog-3.jpg',
+                description: 'The seat of local government, Tanauan City Hall represents the city\'s administrative heritage and modern governance. The building\'s architecture reflects the blend of traditional Filipino design with contemporary functionality. This landmark showcases the evolution of local governance and serves as a hub for civic activities and public services. The building features modern amenities while maintaining architectural elements that reflect the city\'s cultural identity and commitment to serving its citizens.',
+                era: 'Built: 20th Century',
+                location: 'Government District'
+            },
+            'heritage-houses': {
+                title: 'Heritage Houses',
+                image: '../assets/images/blog-4.jpg',
+                description: 'Scattered throughout Tanauan are beautiful heritage houses that showcase traditional Filipino architecture. These well-preserved structures tell the story of the city\'s affluent past and the families who contributed to its cultural and economic development. These houses feature distinctive architectural elements such as capiz shell windows, wooden balconies, and intricate carvings that reflect the Spanish colonial influence. Many of these houses have been carefully restored and serve as living museums of the city\'s rich architectural heritage.',
+                era: 'Era: Spanish Colonial',
+                location: 'Various Locations'
+            }
+        };
+
+        // Modal functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('landmarkModal');
+            const modalClose = document.getElementById('modalClose');
+            const modalOverlay = document.querySelector('.modal-overlay');
+            const landmarkCards = document.querySelectorAll('.landmark-card');
+
+            // Open modal when card is clicked
+            landmarkCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const landmarkId = this.getAttribute('data-landmark');
+                    const landmark = landmarks[landmarkId];
+                    
+                    if (landmark) {
+                        // Populate modal with landmark data
+                        document.getElementById('modalImage').src = landmark.image;
+                        document.getElementById('modalImage').alt = landmark.title;
+                        document.getElementById('modalTitle').textContent = landmark.title;
+                        document.getElementById('modalDescription').textContent = landmark.description;
+                        document.getElementById('modalEra').textContent = landmark.era;
+                        document.getElementById('modalLocation').textContent = landmark.location;
+                        
+                        // Show modal
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                    }
+                });
+            });
+
+            // Close modal functions
+            function closeModal() {
+                modal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+
+            // Close modal when close button is clicked
+            modalClose.addEventListener('click', closeModal);
+
+            // Close modal when overlay is clicked
+            modalOverlay.addEventListener('click', closeModal);
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -13,34 +13,11 @@
 <body>
     <header class="header" data-header>
         <div class="container">
-            <a href="../index.html">
+            <div class="overlay" data-overlay></div>
+            
+            <a href="../index.html" class="logo">
                 <img src="../assets/images/fsc-logo-black.png" alt="logo" width="100" height="100">
             </a>
-            <!-- <nav class="navbar" data-navbar>
-                <div class="navbar-top">
-                    <a href="../index.html" class="logo">Desinic</a>
-                    <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-                </div>
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <a href="../index.html#home" class="navbar-link" data-navbar-link>Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="../index.html#about" class="navbar-link" data-navbar-link>Tanauan</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="../index.html#services" class="navbar-link" data-navbar-link>Explore</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="../index.html#blog" class="navbar-link" data-navbar-link>Visit Map</a>
-                    </li>
-                </ul>
-            </nav> -->
-            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-                <ion-icon name="menu-outline"></ion-icon>
-            </button>
         </div>
     </header>
 
@@ -63,66 +40,21 @@
                 <h2 class="h2 section-title underline">Must-Visit Attractions</h2>
                 
                 <div class="attractions-grid">
-                    <div class="attraction-card">
+                    <div class="attraction-card" data-attraction="taal-lake">
                         <div class="attraction-image">
-                            <img src="../assets/images/blog-1.jpg" alt="Tanauan City Plaza" class="w-100">
+                            <img src="../assets/images/blog-1.jpg" alt="Taal Lake & Volcano Viewing" class="w-100">
                         </div>
                         <div class="attraction-content">
-                            <h3 class="h3 attraction-title">Tanauan City Plaza</h3>
+                            <h3 class="h3 attraction-title">Taal Lake & Volcano Viewing</h3>
                             <p class="attraction-description">
-                                The heart of Tanauan City, this central plaza serves as a gathering place for locals and visitors alike. 
-                                It features beautiful landscaping, historical monuments, and is perfect for leisurely strolls and community events.
+                                Experience breathtaking panoramic views of the iconic Taal Lake and its active volcano. 
+                                Several scenic viewpoints around Tanauan offer perfect spots for photography, relaxation, 
+                                and appreciating the natural beauty of this geological wonder.
                             </p>
                             <div class="attraction-details">
                                 <span class="detail-item">
                                     <ion-icon name="location-outline"></ion-icon>
-                                    City Center
-                                </span>
-                                <span class="detail-item">
-                                    <ion-icon name="time-outline"></ion-icon>
-                                    Open 24/7
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <img src="../assets/images/blog-2.jpg" alt="Mount Maculot" class="w-100">
-                        </div>
-                        <div class="attraction-content">
-                            <h3 class="h3 attraction-title">Mount Maculot</h3>
-                            <p class="attraction-description">
-                                A popular hiking destination offering breathtaking views of Taal Lake and the surrounding landscape. 
-                                The mountain features different trails suitable for various skill levels, making it perfect for adventure seekers.
-                            </p>
-                            <div class="attraction-details">
-                                <span class="detail-item">
-                                    <ion-icon name="location-outline"></ion-icon>
-                                    Cuenca, Batangas
-                                </span>
-                                <span class="detail-item">
-                                    <ion-icon name="time-outline"></ion-icon>
-                                    Best: 6AM-5PM
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <img src="../assets/images/blog-3.jpg" alt="Taal Lake View" class="w-100">
-                        </div>
-                        <div class="attraction-content">
-                            <h3 class="h3 attraction-title">Taal Lake Viewpoints</h3>
-                            <p class="attraction-description">
-                                Several scenic spots around Tanauan offer spectacular views of the iconic Taal Lake and Volcano. 
-                                These viewpoints are perfect for photography, relaxation, and appreciating the natural beauty of the region.
-                            </p>
-                            <div class="attraction-details">
-                                <span class="detail-item">
-                                    <ion-icon name="location-outline"></ion-icon>
-                                    Various Locations
+                                    Various Viewpoints
                                 </span>
                                 <span class="detail-item">
                                     <ion-icon name="time-outline"></ion-icon>
@@ -132,20 +64,69 @@
                         </div>
                     </div>
 
-                    <div class="attraction-card">
+                    <div class="attraction-card" data-attraction="eskinita-farm">
                         <div class="attraction-image">
-                            <img src="../assets/images/blog-4.jpg" alt="Parks and Gardens" class="w-100">
+                            <img src="../assets/images/blog-2.jpg" alt="Eskinita Art Farm" class="w-100">
                         </div>
                         <div class="attraction-content">
-                            <h3 class="h3 attraction-title">Parks and Gardens</h3>
+                            <h3 class="h3 attraction-title">Eskinita Art Farm</h3>
                             <p class="attraction-description">
-                                Tanauan boasts several well-maintained parks and gardens that provide peaceful retreats for visitors. 
-                                These green spaces offer walking paths, playgrounds, and areas for outdoor activities and family gatherings.
+                                A unique cultural destination that combines art, agriculture, and community. 
+                                This creative farm showcases local artists' works, offers workshops, and provides 
+                                visitors with an immersive experience of Tanauan's artistic heritage and rural charm.
                             </p>
                             <div class="attraction-details">
                                 <span class="detail-item">
                                     <ion-icon name="location-outline"></ion-icon>
-                                    Multiple Locations
+                                    Rural Tanauan
+                                </span>
+                                <span class="detail-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    9AM-5PM
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card" data-attraction="j-castles">
+                        <div class="attraction-image">
+                            <img src="../assets/images/blog-3.jpg" alt="J Castles Amusement Park" class="w-100">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="h3 attraction-title">J Castles Amusement Park</h3>
+                            <p class="attraction-description">
+                                A family-friendly entertainment destination featuring exciting rides, games, and attractions. 
+                                Perfect for families and thrill-seekers looking for fun-filled adventures and memorable 
+                                experiences in Tanauan.
+                            </p>
+                            <div class="attraction-details">
+                                <span class="detail-item">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                    City Center
+                                </span>
+                                <span class="detail-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    10AM-8PM
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card" data-attraction="city-park">
+                        <div class="attraction-image">
+                            <img src="../assets/images/blog-4.jpg" alt="Tanauan City Park" class="w-100">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="h3 attraction-title">Tanauan City Park</h3>
+                            <p class="attraction-description">
+                                A well-maintained urban green space that serves as the heart of community life. 
+                                Features walking paths, playgrounds, picnic areas, and open spaces perfect for 
+                                outdoor activities, family gatherings, and leisurely strolls.
+                            </p>
+                            <div class="attraction-details">
+                                <span class="detail-item">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                    City Center
                                 </span>
                                 <span class="detail-item">
                                     <ion-icon name="time-outline"></ion-icon>
@@ -154,10 +135,85 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="attraction-card" data-attraction="solar-plant">
+                        <div class="attraction-image">
+                            <img src="../assets/images/blog-1.jpg" alt="Tanauan Solar Power Plant" class="w-100">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="h3 attraction-title">Tanauan Solar Power Plant</h3>
+                            <p class="attraction-description">
+                                A modern showcase of sustainable energy technology and environmental innovation. 
+                                This solar facility demonstrates Tanauan's commitment to renewable energy and 
+                                offers educational tours about clean energy solutions and environmental stewardship.
+                            </p>
+                            <div class="attraction-details">
+                                <span class="detail-item">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                    Industrial District
+                                </span>
+                                <span class="detail-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    By Appointment
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card" data-attraction="eco-park">
+                        <div class="attraction-image">
+                            <img src="../assets/images/blog-2.jpg" alt="Sabang River Eco Park" class="w-100">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="h3 attraction-title">Sabang River Eco Park</h3>
+                            <p class="attraction-description">
+                                A serene natural retreat along the Sabang River featuring lush greenery, walking trails, 
+                                and opportunities for nature observation. This eco-park promotes environmental awareness 
+                                and provides a peaceful escape for nature lovers and outdoor enthusiasts.
+                            </p>
+                            <div class="attraction-details">
+                                <span class="detail-item">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                    Sabang Area
+                                </span>
+                                <span class="detail-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    7AM-6PM
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Modal -->
+    <div class="modal" id="attractionModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="modal-details">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div class="modal-info">
+                    <div class="info-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span id="modalLocation"></span>
+                    </div>
+                    <div class="info-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span id="modalTime"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-bottom">
@@ -174,5 +230,102 @@
     <script src="../assets/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        // Attraction data
+        const attractions = {
+            'taal-lake': {
+                title: 'Taal Lake & Volcano Viewing',
+                image: '../assets/images/blog-1.jpg',
+                description: 'Experience breathtaking panoramic views of the iconic Taal Lake and its active volcano. Several scenic viewpoints around Tanauan offer perfect spots for photography, relaxation, and appreciating the natural beauty of this geological wonder. The area provides stunning sunrise and sunset views, making it a photographer\'s paradise and a must-visit destination for nature enthusiasts.',
+                location: 'Various Viewpoints',
+                time: 'Sunrise/Sunset'
+            },
+            'eskinita-farm': {
+                title: 'Eskinita Art Farm',
+                image: '../assets/images/blog-2.jpg',
+                description: 'A unique cultural destination that combines art, agriculture, and community. This creative farm showcases local artists\' works, offers workshops, and provides visitors with an immersive experience of Tanauan\'s artistic heritage and rural charm. Visitors can participate in art workshops, explore the farm\'s sustainable practices, and connect with local artists.',
+                location: 'Rural Tanauan',
+                time: '9AM-5PM'
+            },
+            'j-castles': {
+                title: 'J Castles Amusement Park',
+                image: '../assets/images/blog-3.jpg',
+                description: 'A family-friendly entertainment destination featuring exciting rides, games, and attractions. Perfect for families and thrill-seekers looking for fun-filled adventures and memorable experiences in Tanauan. The park offers a variety of rides suitable for all ages, from gentle carousel rides for children to thrilling roller coasters for adventure seekers.',
+                location: 'City Center',
+                time: '10AM-8PM'
+            },
+            'city-park': {
+                title: 'Tanauan City Park',
+                image: '../assets/images/blog-4.jpg',
+                description: 'A well-maintained urban green space that serves as the heart of community life. Features walking paths, playgrounds, picnic areas, and open spaces perfect for outdoor activities, family gatherings, and leisurely strolls. The park hosts various community events and provides a peaceful retreat for residents and visitors alike.',
+                location: 'City Center',
+                time: '6AM-10PM'
+            },
+            'solar-plant': {
+                title: 'Tanauan Solar Power Plant',
+                image: '../assets/images/blog-1.jpg',
+                description: 'A modern showcase of sustainable energy technology and environmental innovation. This solar facility demonstrates Tanauan\'s commitment to renewable energy and offers educational tours about clean energy solutions and environmental stewardship. Visitors can learn about solar technology, sustainability practices, and the city\'s green initiatives.',
+                location: 'Industrial District',
+                time: 'By Appointment'
+            },
+            'eco-park': {
+                title: 'Sabang River Eco Park',
+                image: '../assets/images/blog-2.jpg',
+                description: 'A serene natural retreat along the Sabang River featuring lush greenery, walking trails, and opportunities for nature observation. This eco-park promotes environmental awareness and provides a peaceful escape for nature lovers and outdoor enthusiasts. The park features native plants, wildlife observation areas, and educational displays about local ecosystems.',
+                location: 'Sabang Area',
+                time: '7AM-6PM'
+            }
+        };
+
+        // Modal functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('attractionModal');
+            const modalClose = document.getElementById('modalClose');
+            const modalOverlay = document.querySelector('.modal-overlay');
+            const attractionCards = document.querySelectorAll('.attraction-card');
+
+            // Open modal when card is clicked
+            attractionCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const attractionId = this.getAttribute('data-attraction');
+                    const attraction = attractions[attractionId];
+                    
+                    if (attraction) {
+                        // Populate modal with attraction data
+                        document.getElementById('modalImage').src = attraction.image;
+                        document.getElementById('modalImage').alt = attraction.title;
+                        document.getElementById('modalTitle').textContent = attraction.title;
+                        document.getElementById('modalDescription').textContent = attraction.description;
+                        document.getElementById('modalLocation').textContent = attraction.location;
+                        document.getElementById('modalTime').textContent = attraction.time;
+                        
+                        // Show modal
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                    }
+                });
+            });
+
+            // Close modal functions
+            function closeModal() {
+                modal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+
+            // Close modal when close button is clicked
+            modalClose.addEventListener('click', closeModal);
+
+            // Close modal when overlay is clicked
+            modalOverlay.addEventListener('click', closeModal);
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
